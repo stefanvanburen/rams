@@ -1,5 +1,3 @@
-A Lush Theme for Neovim.
-===
+# rams
 
-See: http://git.io/lush.nvim for more information on Lush and a helper script
-to setup your repo clone.
+A colorscheme for neovim (and maybe, eventually, more?).
