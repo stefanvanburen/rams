@@ -276,6 +276,26 @@ local theme = lush(function()
     -- TSLiteral            { };    -- Literal text.
     -- TSURI                { };    -- Any URI like a link or email.
 
+    -- External Plugins
+
+    -- these are needed for things like inline diffs in Fugitive to work.
+    -- from runtime/syntax/diff.vim
+    diffAdded   { DiffAdd },
+    diffRemoved { DiffDelete },
+
+    -- https://github.com/dense-analysis/ale
+    ALEError       { fg = accent },
+    ALEWarning     { ALEError },
+    ALEInfo        { ALEError },
+    ALEErrorSign   { ALEError },
+    ALEWarningSign { ALEError },
+    ALEInfoSign    { ALEError },
+
+    -- https://github.com/ntpeters/vim-better-whitespace
+    ExtraWhitespace { SpellBad },
+
+    -- when editing git commit text, highlight the overflow in the first line (over 50 characters).
+    gitcommitOverflow { SpellBad },
   }
 end)
 
