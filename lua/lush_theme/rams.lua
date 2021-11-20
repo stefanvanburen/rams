@@ -107,7 +107,7 @@ local theme = lush(function()
     NormalFloat  { }, -- Normal text in floating windows.
     NormalNC     { }, -- normal text in non-current windows
     Pmenu        { }, -- Popup menu: normal item.
-    PmenuSel     { }, -- Popup menu: selected item.
+    PmenuSel     { fg = white, bg = black }, -- Popup menu: selected item.
     PmenuSbar    { }, -- Popup menu: scrollbar.
     PmenuThumb   { }, -- Popup menu: Thumb of the scrollbar.
     Question     { }, -- |hit-enter| prompt and yes/no questions
@@ -128,7 +128,7 @@ local theme = lush(function()
     VisualNOS    { }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg   { }, -- warning messages
     Whitespace   { NonText }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
-    WildMenu     { }, -- current match in 'wildmenu' completion
+    WildMenu     { fg = white, bg = black }, -- current match in 'wildmenu' completion
 
     -- These groups are not listed as default vim groups,
     -- but they are defacto standard group names for syntax highlighting.
