@@ -18,4 +18,3 @@ lua package.loaded['lush_theme.rams'] = nil
 
 " include our theme file and pass it to lush to apply
 lua require('lush')(require('lush_theme.rams'))
-

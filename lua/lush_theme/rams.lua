@@ -50,8 +50,6 @@ local white = hsl(0, 0, 92.2)
 local grey = hsl(0, 0, 47.1)
 local lightgrey = hsl(0, 0, 82.4)
 local accent = hsl(3, 83.8, 53.8)
-local green = hsl(102, 100, 77.3)
-local red = hsl(2, 100, 71.6)
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
@@ -81,9 +79,9 @@ local theme = lush(function()
     CursorColumn { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine   { }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory    { }, -- directory names (and other special names in listings)
-    DiffAdd      { fg = black, bg = green }, -- diff mode: Added line |diff.txt|
-    DiffChange   { fg = black, bg = white }, -- diff mode: Changed line |diff.txt|
-    DiffDelete   { fg = black, bg = red }, -- diff mode: Deleted line |diff.txt|
+    DiffAdd      { fg = black, bg = lightgrey }, -- diff mode: Added line |diff.txt|
+    DiffChange   { fg = black, bg = lightgrey }, -- diff mode: Changed line |diff.txt|
+    DiffDelete   { fg = black, bg = lightgrey }, -- diff mode: Deleted line |diff.txt|
     DiffText     { fg = accent, bg = white }, -- diff mode: Changed text within a changed line |diff.txt|
     -- EndOfBuffer  { }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     TermCursor   { }, -- cursor in a focused terminal
