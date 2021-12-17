@@ -72,7 +72,7 @@ local theme = lush(function()
 
     Comment      { fg = grey }, -- any comment
     -- TODO: this probably looks bad
-    ColorColumn  { fg = white, bg = black }, -- used for the columns set with 'colorcolumn'
+    ColorColumn  { bg = lightgrey }, -- used for the columns set with 'colorcolumn'
     Conceal      { }, -- placeholder characters substituted for concealed text (see 'conceallevel')
     -- TODO: how to omit? does it need to be omitted?
     Cursor       { }, -- character under the cursor
