@@ -82,9 +82,9 @@ local theme = lush(function()
     CursorLine   { }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory    { }, -- directory names (and other special names in listings)
     DiffAdd      { fg = black, bg = green }, -- diff mode: Added line |diff.txt|
-    DiffChange   { fg = black, bg = white }, -- diff mode: Changed line |diff.txt|
+    DiffChange   { }, -- diff mode: Changed line |diff.txt|
     DiffDelete   { fg = black, bg = red }, -- diff mode: Deleted line |diff.txt|
-    DiffText     { fg = accent, bg = white }, -- diff mode: Changed text within a changed line |diff.txt|
+    DiffText     { fg = white, bg = accent, gui = "bold" }, -- diff mode: Changed text within a changed line |diff.txt|
     -- EndOfBuffer  { }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     TermCursor   { }, -- cursor in a focused terminal
     TermCursorNC { }, -- cursor in an unfocused terminal
