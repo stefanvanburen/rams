@@ -191,32 +191,32 @@ local theme = lush(function()
     LspReferenceRead                     { LspReferenceText }, -- used for highlighting "read" references
     LspReferenceWrite                    { LspReferenceText }, -- used for highlighting "write" references
 
-    LspDiagnosticsDefaultError           { fg = accent }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultWarn            { fg = accent }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultInfo            { fg = grey }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-    LspDiagnosticsDefaultHint            { fg = grey }, -- Used as the base highlight group. Other LspDiagnostic highlights link to this by default (except Underline)
-
-    -- LspDiagnosticsVirtualTextError       { }, -- Used for "Error" diagnostic virtual text
-    -- LspDiagnosticsVirtualTextWarn        { }, -- Used for "Warn" diagnostic virtual text
-    -- LspDiagnosticsVirtualTextInfo        { }, -- Used for "Info" diagnostic virtual text
-    -- LspDiagnosticsVirtualTextHint        { }, -- Used for "Hint" diagnostic virtual text
-
-    -- LspDiagnosticsUnderlineError         { }, -- Used to underline "Error" diagnostics
-    -- LspDiagnosticsUnderlineWarn          { }, -- Used to underline "Warn" diagnostics
-    -- LspDiagnosticsUnderlineInfo          { }, -- Used to underline "Info" diagnostics
-    -- LspDiagnosticsUnderlineHint          { }, -- Used to underline "Hint" diagnostics
-
-    -- LspDiagnosticsFloatingError          { }, -- Used to color "Error" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingWarn           { }, -- Used to color "Warn" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingInfo           { }, -- Used to color "Info" diagnostic messages in diagnostics float
-    -- LspDiagnosticsFloatingHint           { }, -- Used to color "Hint" diagnostic messages in diagnostics float
-
-    -- LspDiagnosticsSignError              { }, -- Used for "Error" signs in sign column
-    -- LspDiagnosticsSignWarn               { }, -- Used for "Warn" signs in sign column
-    -- LspDiagnosticsSignInfo               { }, -- Used for "Info" signs in sign column
-    -- LspDiagnosticsSignHint               { }, -- Used for "Hint" signs in sign column
-
     -- LspCodeLens                          { }, -- Used to color the virtual text of the codelens
+
+    DiagnosticError           { fg = accent }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticWarn            { fg = accent }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticInfo            { fg = grey }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+    DiagnosticHint            { fg = grey }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default (except Underline)
+
+    -- DiagnosticVirtualTextError       { }, -- Used for "Error" diagnostic virtual text
+    -- DiagnosticVirtualTextWarn        { }, -- Used for "Warn" diagnostic virtual text
+    -- DiagnosticVirtualTextInfo        { }, -- Used for "Info" diagnostic virtual text
+    -- DiagnosticVirtualTextHint        { }, -- Used for "Hint" diagnostic virtual text
+
+    -- DiagnosticUnderlineError         { }, -- Used to underline "Error" diagnostics
+    -- DiagnosticUnderlineWarn          { }, -- Used to underline "Warn" diagnostics
+    -- DiagnosticUnderlineInfo          { }, -- Used to underline "Info" diagnostics
+    -- DiagnosticUnderlineHint          { }, -- Used to underline "Hint" diagnostics
+
+    -- DiagnosticFloatingError          { }, -- Used to color "Error" diagnostic messages in diagnostics float
+    -- DiagnosticFloatingWarn           { }, -- Used to color "Warn" diagnostic messages in diagnostics float
+    -- DiagnosticFloatingInfo           { }, -- Used to color "Info" diagnostic messages in diagnostics float
+    -- DiagnosticFloatingHint           { }, -- Used to color "Hint" diagnostic messages in diagnostics float
+
+    -- DiagnosticSignError              { }, -- Used for "Error" signs in sign column
+    -- DiagnosticSignWarn               { }, -- Used for "Warn" signs in sign column
+    -- DiagnosticSignInfo               { }, -- Used for "Info" signs in sign column
+    -- DiagnosticSignHint               { }, -- Used for "Hint" signs in sign column
 
     -- These groups are for the neovim tree-sitter highlights.
     -- As of writing, tree-sitter support is a WIP, group names may change.
