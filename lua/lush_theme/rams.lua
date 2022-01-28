@@ -79,7 +79,7 @@ local theme = lush(function()
     lCursor      { }, -- the character under the cursor when |language-mapping| is used (see 'guicursor')
     CursorIM     { }, -- like Cursor, but used when in IME mode |CursorIM|
     CursorColumn { }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorLine   { }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine   { bg = lightgrey }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory    { }, -- directory names (and other special names in listings)
     DiffAdd      { fg = black, bg = green }, -- diff mode: Added line |diff.txt|
     DiffChange   { }, -- diff mode: Changed line |diff.txt|
