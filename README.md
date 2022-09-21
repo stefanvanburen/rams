@@ -11,13 +11,13 @@ which is using [lush.nvim](https://github.com/rktjmp/lush.nvim).
 
 [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
-```
+```lua
 use 'stefanvanburen/rams'
 ```
 
 ## Usage
 
-```
+```vim
 colorscheme rams
 ```
 
