@@ -18,6 +18,8 @@ use 'stefanvanburen/rams'
 ## Usage
 
 ```vim
+set termguicolors
+set background=light
 colorscheme rams
 ```
 
