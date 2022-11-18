@@ -144,10 +144,10 @@ local theme = lush(function(injected_functions)
     -- Boolean        { }, --  a boolean constant: TRUE, false
     -- Float          { }, --    a floating point constant: 2.3e10
 
-    Identifier     { fg = black, gui = "bold" }, -- (preferred) any variable name
+    Identifier     { fg = black }, -- (preferred) any variable name
     -- Function       { }, -- function name (also: methods for classes)
 
-    Statement      { fg = black, gui = "bold" }, -- (preferred) any statement
+    Statement      { fg = black }, -- (preferred) any statement
     -- Conditional    { }, --  if, then, else, endif, switch, etc.
     -- Repeat         { }, --   for, do, while, etc.
     -- Label          { }, --    case, default, etc.
