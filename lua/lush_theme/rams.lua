@@ -147,7 +147,7 @@ local theme = lush(function(injected_functions)
     Identifier     { fg = black }, -- (preferred) any variable name
     -- Function       { }, -- function name (also: methods for classes)
 
-    Statement      { fg = black }, -- (preferred) any statement
+    Statement      { fg = black, gui = "bold" }, -- (preferred) any statement
     -- Conditional    { }, --  if, then, else, endif, switch, etc.
     -- Repeat         { }, --   for, do, while, etc.
     -- Label          { }, --    case, default, etc.
