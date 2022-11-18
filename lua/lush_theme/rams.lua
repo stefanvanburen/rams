@@ -219,12 +219,22 @@ local theme = lush(function(injected_functions)
     -- DiagnosticSignInfo               { }, -- Used for "Info" signs in sign column
     -- DiagnosticSignHint               { }, -- Used for "Hint" signs in sign column
 
-    -- Treesitter
-    -- The obsolete TS* highlight groups are removed since this commit
-    -- https://github.com/nvim-treesitter/nvim-treesitter/commit/42ab95d5e11f247c6f0c8f5181b02e816caa4a4f
-    -- Now use the capture names directly as the highlight groups.
-    -- (1). How to define the highlight group, see https://github.com/rktjmp/lush.nvim/issues/109
-    -- (2). To find all the capture names, see https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights)
+    -- Tree-Sitter syntax groups.
+    --
+    -- See :h treesitter-highlight-groups, some groups may not be listed,
+    -- submit a PR fix to lush-template!
+    --
+    -- Tree-Sitter groups are defined with an "@" symbol, which must be
+    -- specially handled to be valid lua code, we do this via the special
+    -- sym function. The following are all valid ways to call the sym function,
+    -- for more details see https://www.lua.org/pil/5.html
+    --
+    -- sym("@text.literal")
+    -- sym('@text.literal')
+    -- sym"@text.literal"
+    -- sym'@text.literal'
+    --
+    -- For more information see https://github.com/rktjmp/lush.nvim/issues/109
 
     -- sym("@attribute") { },
     -- sym("@boolean") { },
