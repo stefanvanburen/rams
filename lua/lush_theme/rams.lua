@@ -107,10 +107,10 @@ local theme = lush(function(injected_functions)
     Normal       { fg = black, bg = white }, -- normal text
     NormalFloat  { }, -- Normal text in floating windows.
     NormalNC     { }, -- normal text in non-current windows
-    Pmenu        { }, -- Popup menu: normal item.
-    PmenuSel     { fg = white, bg = black }, -- Popup menu: selected item.
-    PmenuSbar    { }, -- Popup menu: scrollbar.
-    PmenuThumb   { }, -- Popup menu: Thumb of the scrollbar.
+    Pmenu        { fg = black, bg = lightgrey }, -- Popup menu: normal item.
+    PmenuSel     { }, -- Popup menu: selected item.
+    PmenuSbar    { fg = black, bg = lightgrey }, -- Popup menu: scrollbar.
+    PmenuThumb   { fg = black, bg = lightgrey }, -- Popup menu: Thumb of the scrollbar.
     Question     { }, -- |hit-enter| prompt and yes/no questions
     QuickFixLine { }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search       { fg = white, bg = accent, gui = "bold" }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
