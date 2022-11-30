@@ -174,8 +174,8 @@ local theme = lush(function(injected_functions)
     -- Debug          { }, --    debugging statements
 
     Underlined { fg = black, gui = "underline" }, -- (preferred) text that stands out, HTML links
-    -- Bold       { gui = "bold" },
-    -- Italic     { gui = "italic" },
+    Bold       { gui = "bold" },
+    Italic     { gui = "italic" },
 
     -- ("Ignore", below, may be invisible...)
     -- Ignore         { }, -- (preferred) left blank, hidden  |hl-Ignore|
