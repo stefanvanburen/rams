@@ -311,12 +311,12 @@ local theme = lush(function(injected_functions)
     diffRemoved { DiffDelete },
 
     -- https://github.com/dense-analysis/ale
-    ALEError       { fg = accent },
-    ALEWarning     { ALEError },
-    ALEInfo        { ALEError },
+    ALEError       { DiagnosticError },
+    ALEWarning     { DiagnosticWarn },
+    ALEInfo        { DiagnosticInfo },
     ALEErrorSign   { ALEError },
-    ALEWarningSign { ALEError },
-    ALEInfoSign    { ALEError },
+    ALEWarningSign { ALEWarning },
+    ALEInfoSign    { ALEInfo },
 
     -- https://github.com/ntpeters/vim-better-whitespace
     ExtraWhitespace { SpellBad },
