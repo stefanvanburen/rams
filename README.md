@@ -30,3 +30,4 @@ colorscheme rams
 * [fugitive](https://github.com/tpope/vim-fugitive)
 * [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
 * [neovim's builtin LSP client (nvim-lsp)](https://neovim.io/doc/user/lsp.html)
+* [mason.nvim](https://github.com/williamboman/mason.nvim)

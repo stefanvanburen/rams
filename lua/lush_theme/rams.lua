@@ -173,7 +173,7 @@ local theme = lush(function(injected_functions)
     -- SpecialComment { }, -- special things inside a comment
     -- Debug          { }, --    debugging statements
 
-    Underlined { fg = black, gui = "underline" }, -- (preferred) text that stands out, HTML links
+    Underlined { gui = "underline" }, -- (preferred) text that stands out, HTML links
     Bold       { gui = "bold" },
     Italic     { gui = "italic" },
 
@@ -323,6 +323,30 @@ local theme = lush(function(injected_functions)
 
     -- when editing git commit text, highlight the overflow in the first line (over 50 characters).
     gitcommitOverflow { SpellBad },
+
+    -- https://github.com/williamboman/mason.nvim
+    -- https://github.com/williamboman/mason.nvim/blob/main/lua/mason/ui/colors.lua
+    MasonNormal { NormalFloat },
+    MasonHeader { gui = "bold" },
+    MasonHeaderSecondary { fg = grey },
+
+    MasonHighlight { fg = accent },
+    MasonHighlightBlock { bg = accent, fg = white },
+    MasonHighlightBlockBold { MasonHighlightBlock, gui = "bold" },
+
+    MasonHighlightSecondary { fg = accent.desaturate(25) },
+    MasonHighlightBlockSecondary { bg = accent.desaturate(25), fg = white.desaturate(25) },
+    MasonHighlightBlockBoldSecondary { MasonHighlightBlockSecondary, gui = "bold" },
+
+    MasonLink { Underlined },
+
+    MasonMuted { fg = grey },
+    MasonMutedBlock { bg = lightgrey, fg = black },
+    MasonMutedBlockBold { MasonMutedBlock, gui = "bold" },
+
+    MasonError { fg = accent },
+
+    MasonHeading { bold = true },
   }
 end)
 
