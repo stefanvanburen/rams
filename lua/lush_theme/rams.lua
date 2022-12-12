@@ -43,15 +43,15 @@
 --  `:lua require('lush').ify()`
 
 local lush = require('lush')
-local hsl = lush.hsl
+local hsl  = lush.hsl
 
-local black = hsl(213, 12, 17)
-local white = hsl(0, 0, 92)
-local grey = hsl(0, 0, 47)
-local lightgrey = hsl(0, 0, 82)
-local accent = hsl(3, 84, 59)
-local green = hsl(100, 100, 80)
-local red = hsl(0, 100, 80)
+local black     = hsl(213,  12, 17)
+local white     = hsl(  0,   0, 92)
+local grey      = hsl(  0,   0, 47)
+local lightgrey = hsl(  0,   0, 82)
+local accent    = hsl(  3,  84, 59)
+local green     = hsl(100, 100, 80)
+local red       = hsl(  0, 100, 80)
 
 -- LSP/Linters mistakenly show `undefined global` errors in the spec, they may
 -- support an annotation like the following. Consult your server documentation.
