@@ -13,6 +13,8 @@ which is using [lush.nvim](https://github.com/rktjmp/lush.nvim).
 
 ```lua
 use 'stefanvanburen/rams'
+-- lush.nvim is required (for now!)
+use 'rktjmp/lush.nvim'
 ```
 
 ## Usage
