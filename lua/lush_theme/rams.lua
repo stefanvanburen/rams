@@ -127,7 +127,7 @@ local theme = lush(function(injected_functions)
     Title        { }, -- titles for output from ":set all", ":autocmd" etc.
     Visual       { fg = white, bg = black }, -- Visual mode selection
     VisualNOS    { }, -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg   { }, -- warning messages
+    WarningMsg   { fg = accent }, -- warning messages
     Whitespace   { NonText }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu     { fg = white, bg = black }, -- current match in 'wildmenu' completion
 
