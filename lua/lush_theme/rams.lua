@@ -319,10 +319,10 @@ local theme = lush(function(injected_functions)
     ALEInfoSign    { ALEInfo },
 
     -- https://github.com/ntpeters/vim-better-whitespace
-    ExtraWhitespace { SpellBad },
+    ExtraWhitespace { fg = accent, bg = white, gui = "underline" },
 
     -- when editing git commit text, highlight the overflow in the first line (over 50 characters).
-    gitcommitOverflow { SpellBad },
+    gitcommitOverflow { ExtraWhitespace },
 
     -- https://github.com/williamboman/mason.nvim
     -- https://github.com/williamboman/mason.nvim/blob/main/lua/mason/ui/colors.lua
