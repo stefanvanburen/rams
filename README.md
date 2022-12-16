@@ -33,3 +33,4 @@ colorscheme rams
 * [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
 * [neovim's builtin LSP client (nvim-lsp)](https://neovim.io/doc/user/lsp.html)
 * [mason.nvim](https://github.com/williamboman/mason.nvim)
+* [mini.trailspace](https://github.com/echasnovski/mini.nvim#minitrailspace)
