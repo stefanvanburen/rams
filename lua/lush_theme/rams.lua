@@ -320,6 +320,8 @@ local theme = lush(function(injected_functions)
 
     -- https://github.com/ntpeters/vim-better-whitespace
     ExtraWhitespace { WarningMsg },
+    -- https://github.com/echasnovski/mini.nvim#minitrailspace
+    MiniTrailspace { WarningMsg },
 
     -- when editing git commit text, highlight the overflow in the first line (over 50 characters).
     gitcommitOverflow { WarningMsg },
