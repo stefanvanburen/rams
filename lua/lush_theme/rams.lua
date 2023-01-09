@@ -292,6 +292,8 @@ local theme = lush(function(injected_functions)
     -- sym("@text.uri") { },
     -- sym("@text.math") { },
     -- sym("@text.reference") { },
+    sym("@text.diff.add") { DiffAdd },
+    sym("@text.diff.delete") { DiffDelete },
     -- sym("@text.environment") { },
     -- sym("@text.environment.name") { },
     sym("@text.todo") { Todo },
