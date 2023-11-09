@@ -9,18 +9,27 @@ which is using [lush.nvim](https://github.com/rktjmp/lush.nvim).
 
 ## Installation
 
-[packer.nvim](https://github.com/wbthomason/packer.nvim):
+[lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
-use 'stefanvanburen/rams'
--- lush.nvim is required (for now!)
-use 'rktjmp/lush.nvim'
+{
+  "stefanvanburen/rams",
+  lazy = false,
+  priority = 1000,
+  dependencies = {
+    "rktjmp/lush.nvim",
+  },
+  config = function()
+    vim.cmd([[colorscheme rams]])
+  end,
+}
 ```
 
 ## Usage
 
 ```vim
 set termguicolors
+# Only light mode is supported for now, see #9
 set background=light
 colorscheme rams
 ```
