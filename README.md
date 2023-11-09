@@ -29,7 +29,7 @@ which is using [lush.nvim](https://github.com/rktjmp/lush.nvim).
 
 ```vim
 set termguicolors
-# Only light mode is supported for now, see #9
+" Only light mode is supported for now, see #9
 set background=light
 colorscheme rams
 ```
