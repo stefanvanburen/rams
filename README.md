@@ -7,24 +7,6 @@ which used [vim-colortemplate](https://github.com/lifepillar/vim-colortemplate),
 to this repository,
 which is using [lush.nvim](https://github.com/rktjmp/lush.nvim).
 
-## Installation
-
-[lazy.nvim](https://github.com/folke/lazy.nvim):
-
-```lua
-{
-  "stefanvanburen/rams",
-  lazy = false,
-  priority = 1000,
-  dependencies = {
-    "rktjmp/lush.nvim",
-  },
-  config = function()
-    vim.cmd([[colorscheme rams]])
-  end,
-}
-```
-
 ## Usage
 
 ```vim
