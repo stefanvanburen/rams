@@ -1,11 +1,10 @@
 # rams
 
-A colorscheme for neovim (and maybe, eventually, more?).
+A light colorscheme for Neovim built with [mini.colors](https://github.com/nvim-mini/mini.nvim).
 
-For now, the colors have been migrated from [rams.vim](https://github.com/stefanvanburen/rams.vim),
-which used [vim-colortemplate](https://github.com/lifepillar/vim-colortemplate),
-to this repository,
-which is using [lush.nvim](https://github.com/rktjmp/lush.nvim).
+The colors have been migrated from [rams.vim](https://github.com/stefanvanburen/rams.vim),
+which originally used [vim-colortemplate](https://github.com/lifepillar/vim-colortemplate).
+Previously, this repository used [lush.nvim](https://github.com/rktjmp/lush.nvim) before transitioning to mini.colors.
 
 ## Usage
 
