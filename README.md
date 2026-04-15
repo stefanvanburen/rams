@@ -1,26 +1,21 @@
 # rams
 
-A light colorscheme for Neovim built with [mini.colors](https://github.com/nvim-mini/mini.nvim).
+A light colorscheme for Neovim.
 
 The colors have been migrated from [rams.vim](https://github.com/stefanvanburen/rams.vim),
 which originally used [vim-colortemplate](https://github.com/lifepillar/vim-colortemplate).
-Previously, this repository used [lush.nvim](https://github.com/rktjmp/lush.nvim) before transitioning to mini.colors.
 
-## Usage
+## Installation
 
-```vim
-set termguicolors
-" Only light mode is supported for now, see #9
-set background=light
-colorscheme rams
+```lua
+vim.pack.add({ 'https://github.com/stefanvanburen/rams' })
+vim.cmd.colorscheme('rams')
 ```
 
 ## Supported Plugins
 
-* [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-* [ALE](https://github.com/dense-analysis/ale)
-* [fugitive](https://github.com/tpope/vim-fugitive)
-* [vim-better-whitespace](https://github.com/ntpeters/vim-better-whitespace)
-* [neovim's builtin LSP client (nvim-lsp)](https://neovim.io/doc/user/lsp.html)
-* [mason.nvim](https://github.com/williamboman/mason.nvim)
-* [mini.trailspace](https://github.com/echasnovski/mini.nvim#minitrailspace)
+- [ALE](https://github.com/dense-analysis/ale)
+- [fugitive](https://github.com/tpope/vim-fugitive)
+- [mason.nvim](https://github.com/williamboman/mason.nvim)
+- [mini.nvim](https://github.com/echasnovski/mini.nvim)
+- [Neovim's builtin LSP client](https://neovim.io/doc/user/lsp.html)

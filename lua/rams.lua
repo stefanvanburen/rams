@@ -1,6 +1,9 @@
-local MiniColors = require('mini.colors')
+-- rams colorscheme for Neovim
+-- A light colorscheme
 
--- Define colors using the same palette as the original lush theme
+local M = {}
+
+-- Define colors
 local black = '#262B31'
 local white = '#EBEBEB'
 local grey = '#787878'
@@ -331,8 +334,17 @@ local terminal = {
   [15] = white,
 }
 
-return MiniColors.as_colorscheme({
-  name = 'rams',
-  groups = groups,
-  terminal = terminal,
-})
+function M.apply()
+  vim.cmd('highlight clear')
+  vim.g.colors_name = 'rams'
+
+  for group_name, spec in pairs(groups) do
+    vim.api.nvim_set_hl(0, group_name, spec)
+  end
+
+  for i = 0, 15 do
+    vim.g['terminal_color_' .. i] = terminal[i]
+  end
+end
+
+return M
